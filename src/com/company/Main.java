@@ -8,7 +8,7 @@ public class Main {
         double result = 0.0;
         boolean exit = false;
 
-        while (exit == false) {
+        while (!exit) {
             System.out.println("Calculator");
             System.out.print("Enter 1st number: ");
             double x = scanner.nextDouble();
