@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	    Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
         double result = 0.0;
         boolean exit = false;
         String testExit = "y";
