@@ -50,6 +50,14 @@ public class Main {
                 if (breakOut .equalsIgnoreCase(testExit)){
                     exit = true;
                 }
+            } else {
+                System.out.print("Fejl: Inkorrekt operator valgt, prøv igen? (y/n): ");
+                String breakOut = scanner.next();
+                if (breakOut.equalsIgnoreCase(testExit)){
+                    exit = false;
+                } else {
+                    exit = true;
+                }
             }
         }
     }
