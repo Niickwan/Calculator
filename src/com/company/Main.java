@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	Scanner scanner = new Scanner(System.in);
+	    Scanner scanner = new Scanner(System.in);
         double result = 0.0;
         boolean exit = false;
         String testExit = "y";
@@ -21,35 +21,15 @@ public class Main {
             if (operator.equals("+")) {
                 result = x + y;
                 System.out.println(result);
-                System.out.print("Exit? y/n: ");
-                String breakOut = scanner.next();
-                if (breakOut .equalsIgnoreCase(testExit)){
-                    exit = true;
-                }
             } else if (operator.equals("-")) {
                 result = x - y;
                 System.out.println(result);
-                System.out.print("Exit? y/n: ");
-                String breakOut = scanner.next();
-                if (breakOut .equalsIgnoreCase(testExit)){
-                    exit = true;
-                }
             } else if (operator.equals("x") || operator.equals("*")) {
                 result = x * y;
                 System.out.println(result);
-                System.out.print("Exit? y/n: ");
-                String breakOut = scanner.next();
-                if (breakOut .equalsIgnoreCase(testExit)){
-                    exit = true;
-                }
             } else if (operator.equals("/")) {
                 result = x / y;
                 System.out.println(result);
-                System.out.print("Exit? y/n: ");
-                String breakOut = scanner.next();
-                if (breakOut .equalsIgnoreCase(testExit)){
-                    exit = true;
-                }
             } else {
                 System.out.print("Fejl: Inkorrekt operator valgt, prøv igen? (y/n): ");
                 String breakOut = scanner.next();
@@ -58,6 +38,11 @@ public class Main {
                 } else {
                     exit = true;
                 }
+            }
+            System.out.print("Exit? y/n: ");
+            String breakOut = scanner.next();
+            if (breakOut .equalsIgnoreCase(testExit)){
+                exit = true;
             }
         }
     }
