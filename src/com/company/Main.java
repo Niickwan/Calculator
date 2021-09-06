@@ -7,6 +7,7 @@ public class Main {
 	Scanner scanner = new Scanner(System.in);
         double result = 0.0;
         boolean exit = false;
+        String testExit = "y";
 
         while (!exit) {
             System.out.println("Calculator");
@@ -22,7 +23,7 @@ public class Main {
                 System.out.println(result);
                 System.out.print("Exit? y/n: ");
                 String breakOut = scanner.next();
-                if (breakOut .equals("y") || breakOut.equals("Y")){
+                if (breakOut .equalsIgnoreCase(testExit)){
                     exit = true;
                 }
             } else if (operator.equals("-")) {
@@ -30,7 +31,7 @@ public class Main {
                 System.out.println(result);
                 System.out.print("Exit? y/n: ");
                 String breakOut = scanner.next();
-                if (breakOut .equals("y") || breakOut.equals("Y")){
+                if (breakOut .equalsIgnoreCase(testExit)){
                     exit = true;
                 }
             } else if (operator.equals("x") || operator.equals("*")) {
@@ -38,7 +39,7 @@ public class Main {
                 System.out.println(result);
                 System.out.print("Exit? y/n: ");
                 String breakOut = scanner.next();
-                if (breakOut .equals("y") || breakOut.equals("Y")){
+                if (breakOut .equalsIgnoreCase(testExit)){
                     exit = true;
                 }
             } else if (operator.equals("/")) {
@@ -46,7 +47,7 @@ public class Main {
                 System.out.println(result);
                 System.out.print("Exit? y/n: ");
                 String breakOut = scanner.next();
-                if (breakOut .equals("y") || breakOut.equals("Y")){
+                if (breakOut .equalsIgnoreCase(testExit)){
                     exit = true;
                 }
             }
