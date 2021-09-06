@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	    Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
         double result = 0.0;
         boolean exit = false;
 
@@ -25,8 +25,7 @@ public class Main {
                 if (breakOut .equals("y") || breakOut.equals("Y")){
                     exit = true;
                 }
-            }
-            if (operator.equals("-")) {
+            } else if (operator.equals("-")) {
                 result = x - y;
                 System.out.println(result);
                 System.out.print("Exit? y/n: ");
@@ -34,8 +33,7 @@ public class Main {
                 if (breakOut .equals("y") || breakOut.equals("Y")){
                     exit = true;
                 }
-            }
-            if (operator.equals("x") || operator.equals("*")) {
+            } else if (operator.equals("x") || operator.equals("*")) {
                 result = x * y;
                 System.out.println(result);
                 System.out.print("Exit? y/n: ");
@@ -43,8 +41,7 @@ public class Main {
                 if (breakOut .equals("y") || breakOut.equals("Y")){
                     exit = true;
                 }
-            }
-            if (operator.equals("/")) {
+            } else if (operator.equals("/")) {
                 result = x / y;
                 System.out.println(result);
                 System.out.print("Exit? y/n: ");
