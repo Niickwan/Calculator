@@ -18,25 +18,25 @@ public class Main {
             System.out.print("Enter 2nd number: ");
             double y = scanner.nextDouble();
 
-            if (operator.equals("+")) {
-                result = x + y;
-                System.out.println(result);
-            } else if (operator.equals("-")) {
-                result = x - y;
-                System.out.println(result);
-            } else if (operator.equals("x") || operator.equals("*")) {
-                result = x * y;
-                System.out.println(result);
-            } else if (operator.equals("/")) {
-                result = x / y;
-                System.out.println(result);
-            } else {
-                System.out.print("Fejl: Inkorrekt operator valgt, prøv igen? (y/n): ");
-                String breakOut = scanner.next();
-                if (breakOut.equalsIgnoreCase(testExit)){
-                    exit = false;
-                } else {
-                    exit = true;
+            switch (operator) {
+                case "+" -> {
+                    result = x + y;
+                    System.out.println(result);
+                }
+                case "-" -> {
+                    result = x - y;
+                    System.out.println(result);
+                }
+                case "x", "*" -> {
+                    result = x * y;
+                    System.out.println(result);
+                }
+                case "/" -> {
+                    result = x / y;
+                    System.out.println(result);
+                }
+                default -> {
+                    System.out.println("Fejl: Inkorrekt operator valgt");
                 }
             }
             System.out.print("Exit? y/n: ");
